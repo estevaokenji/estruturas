@@ -12,10 +12,9 @@ typedef struct {
 
 String string_new();
 void string_free(String *string);
-bool string_reserve(String *string, size_t required);
 
-bool string_concatenate(String *string, const String *other);
 bool string_append(String *string, char character);
+bool string_concatenate(String *string, const String *other);
 
 char string_get(const String *string, size_t idx);
 String string_slice(const String *string, size_t start, size_t end);
