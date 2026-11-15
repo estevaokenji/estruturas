@@ -19,4 +19,8 @@ typedef struct {
     int type;
 } Object;
 
+void object_print(Object *object);
+void object_sum(Object *object, const Object *other);
+void object_neg(Object *object);
+
 #endif
